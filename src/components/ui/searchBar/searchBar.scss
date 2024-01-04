@@ -1,9 +1,11 @@
+@import "/src/assets/colorPallet.scss";
+
 .search-bar {
     color: black;
     padding: 0.5rem;
     background-color: #e5e5e5;
     border-radius: 2px;
-    border: 1px solid lightgrey;
+    border: 1px solid $border-color;
 
     &:focus {
         border: 0 !important;

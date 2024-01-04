@@ -1,5 +1,4 @@
-$primary-color: #3498db;
-$border-color: #ddd;
+@import "/src/assets/colorPallet.scss";
 
 .collapsible-bar {
     width: 100%;
@@ -16,7 +15,6 @@ $border-color: #ddd;
 }
 
 
-
 .arrow {
     transition: transform 0.3s;
 }
@@ -26,11 +24,11 @@ $border-color: #ddd;
     justify-content: space-between;
     cursor: pointer;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: $container-color;
     border: 1px solid $border-color;
 
     &:hover {
-        background-color: #f2f2f2;
+        background-color: $hovered-container;
     }
 }
 

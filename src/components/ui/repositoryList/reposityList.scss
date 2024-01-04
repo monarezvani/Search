@@ -1,6 +1,4 @@
-$primary-color: #3498db;
-$border-color: #ddd;
-$repositoy-color: #e0e0e0;
+@import "/src/assets/colorPallet.scss";
 
 .repository-container {
     display: flex;

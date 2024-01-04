@@ -1,9 +1,6 @@
 // CollapsibleBar.tsx
 import React, { useState } from 'react';
 import './collapsibleBar.scss';
-import { useAppDispatch } from '../../../features/reduxHook';
-import { fetchRepositories } from '../../../features/respositories/fetchRepositories';
-import { selectUser } from '../../../features/users/userSlice';
 import UserModel from '../../../models/UserModel';
 
 interface CollapsibleBarProps {

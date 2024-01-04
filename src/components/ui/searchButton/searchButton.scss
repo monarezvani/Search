@@ -1,7 +1,9 @@
+@import "/src/assets/colorPallet.scss";
+
 .search_button {
     padding: 0.8rem;
     text-align: center;
-    background-color: #2c9cdb;
+    background-color: $primary-color;
     color: white;
     margin-top: 1rem;
     border: none;
