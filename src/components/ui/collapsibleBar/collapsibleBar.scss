@@ -1,0 +1,91 @@
+$primary-color: #3498db;
+$border-color: #ddd;
+
+.collapsible-bar {
+    width: 100%;
+    margin: 20px auto;
+    transition: background-color 0.3s;
+
+    &.open {
+        .arrow {
+            transform: rotate(180deg);
+        }
+    }
+
+
+}
+
+
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid $border-color;
+
+    &:hover {
+        background-color: #f2f2f2;
+    }
+}
+
+.item-title {
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-bottom: 5px solid black;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-bottom: 5px solid black;
+}
+
+.collapse-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent $primary-color;
+    cursor: pointer;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    // transition: max-height 0.3s ease-in-out;
+    border: 1px solid $border-color;
+    border-top: none;
+    transition: height 0.5s;
+
+
+
+    &.expanded {
+        max-height: 100%;
+        display: block;
+
+    }
+
+    .repository {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}

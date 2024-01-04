@@ -1,0 +1,17 @@
+.search_container {
+    box-sizing: border-box;
+    width: 500px;
+    background-color: #fff;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll
+        /* justify-content: space-between; */
+}
+
+@media (max-width: 600px) {
+    .search_container {
+        width: 100%;
+    }
+}
