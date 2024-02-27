@@ -1,4 +1,3 @@
-import React from 'react'
 import User from '../../models/UserModel'
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { fetchUsers } from './fetchUsers';
@@ -30,12 +29,12 @@ export const userSlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(fetchUsers.pending, (state) => {
             state.status = 'loading'
-        }),
-            builder.addCase(fetchUsers.fulfilled, (state, action: PayloadAction<User[]>) => {
+        })
+        .addCase(fetchUsers.fulfilled, (state, action: PayloadAction<User[]>) => {
                 state.status = 'succeeded';
                 state.data = action.payload;
-            }),
-            builder.addCase(fetchUsers.rejected, (state, action) => {
+            })
+            .addCase(fetchUsers.rejected, (state, action) => {
                 state.status = 'failed';
                 state.error = action.error.message ?? 'Error fetching users'
 
